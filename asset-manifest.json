@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Tabs-React-Project/static/css/main.70502fb5.chunk.css",
+    "main.js": "/Tabs-React-Project/static/js/main.9244f03c.chunk.js",
+    "main.js.map": "/Tabs-React-Project/static/js/main.9244f03c.chunk.js.map",
+    "runtime-main.js": "/Tabs-React-Project/static/js/runtime-main.2d32c828.js",
+    "runtime-main.js.map": "/Tabs-React-Project/static/js/runtime-main.2d32c828.js.map",
+    "static/js/2.bcafc819.chunk.js": "/Tabs-React-Project/static/js/2.bcafc819.chunk.js",
+    "static/js/2.bcafc819.chunk.js.map": "/Tabs-React-Project/static/js/2.bcafc819.chunk.js.map",
+    "index.html": "/Tabs-React-Project/index.html",
+    "precache-manifest.8780bd45d92d6461fa879d9cc0cf4a8d.js": "/Tabs-React-Project/precache-manifest.8780bd45d92d6461fa879d9cc0cf4a8d.js",
+    "service-worker.js": "/Tabs-React-Project/service-worker.js",
+    "static/css/main.70502fb5.chunk.css.map": "/Tabs-React-Project/static/css/main.70502fb5.chunk.css.map",
+    "static/js/2.bcafc819.chunk.js.LICENSE.txt": "/Tabs-React-Project/static/js/2.bcafc819.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d32c828.js",
+    "static/js/2.bcafc819.chunk.js",
+    "static/css/main.70502fb5.chunk.css",
+    "static/js/main.9244f03c.chunk.js"
+  ]
+}
