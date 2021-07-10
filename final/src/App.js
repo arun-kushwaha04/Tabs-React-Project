@@ -10,7 +10,7 @@ function App() {
   //function to fetch api
   const fetchJobs = async () =>{
     const response = await fetch(url);
-    const data = response.json();
+    const data = await response.json();
     setJobs(data);
     setLoading(false);
   }
@@ -21,9 +21,39 @@ function App() {
 
   //page view on loading of page
   if(loading){
-    return <h1>Loading ...</h1>
+    return (
+      <section className="section loading">
+        <h1>Loading ...</h1>
+      </section>
+    )    
   }
-  return <h2>tabs project setup</h2>
+  const {company ,title, dates, duties} = jobs[value];
+  return (
+    <section className='section'>
+      <div className='title'>
+        <h1>Experience</h1>
+        <div className="underline"></div>
+      </div>
+      <div className="jobs-center">
+        {/* btn-container */}
+        {/* job info */}
+        <article className="job-info">
+          <h3>{title}</h3>
+          <h4>{company}</h4>
+          <p className='job-date'>{dates}</p>
+          {duties.map((element,index) =>{
+            return (
+              <div className="job-desc" key={index}>
+                <FaAngleDoubleRight className='job-icon'></FaAngleDoubleRight>
+                <p>{element}</p>
+              </div>
+            )
+          })}
+        </article>
+
+      </div>
+    </section>
+  )
 }
 
 export default App
