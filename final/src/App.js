@@ -8,11 +8,20 @@ function App() {
   const [value,setValue] = useState(0);
 
   //function to fetch api
-  const fetchJobs = () =>{
+  const fetchJobs = async () =>{
     const response = await fetch(url);
     const data = response.json();
     setJobs(data);
-    setLoading(flase);
+    setLoading(false);
+  }
+
+  useEffect(() =>{
+    fetchJobs();
+  },[]);
+
+  //page view on loading of page
+  if(loading){
+    return <h1>Loading ...</h1>
   }
   return <h2>tabs project setup</h2>
 }
